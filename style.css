@@ -108,9 +108,10 @@ body {
     }
 }
 
-@media (max-width: 480px) and (min-width: 320px) {
+@media (max-width: 480px) and (min-width: 0px) {
     .main1 .main1head2 {
     font-size: 1.8rem;
+    margin-bottom: 1rem;
     }
 }
 
@@ -154,7 +155,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     /* border: 0.1rem solid black; */
 }
 
@@ -173,6 +174,12 @@ body {
 @media (max-width: 576px) and (min-width: 480px) {
     .main3 .main3head1 {
         font-size: 3rem;
+    }
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+    .main3 .main3head1 {
+        width: 90vw;
     }
 }
 
@@ -235,7 +242,7 @@ body {
 
 @media (max-width: 480px) and (min-width: 0px) {
     .main3 .main3para1 {
-        width: 28rem;
+        width: 75vw;
         font-size: 1.8rem;
         margin-top: 2.5rem;
     }
@@ -270,22 +277,26 @@ body {
     font-size: 2rem;
     text-align: justify;
     font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
 }
 
 @media (max-width: 480px) and (min-width: 0px) {
     .main4 .main4sub p {
-        min-width: 28rem;
+        min-width: 20rem;
+        width: 85vw;
     }
 }
 
 .main4 .main4sub ul li {
     min-width: 35rem;
     width: 60vw;
+    line-height: 2.8rem;
 }
 
 @media (max-width: 480px) and (min-width: 0px) {
     .main4 .main4sub ul li {
-        min-width: 25rem;
+        min-width: 20rem;
+        width: 75vw;
     }
 }
 
@@ -338,13 +349,21 @@ body {
 }
 
 .main5 .main5sub .main5subpart1 .mainimg1 {
+    display: flex;
+    justify-content: center;
     width: 30rem;
-    border: 0.1rem solid black;
+    /* border: 0.1rem solid black; */
+}
+
+.main5 .main5sub .main5subpart1 img {
+    width: 30rem;
+    height: 30rem;
 }
 
 @media (max-width: 480px) and (min-width: 0px) {
-    .main5 .main5sub .main5subpart1 .mainimg1 {
-        width: 26rem;
+    .main5 .main5sub .main5subpart1 .mainimg1 img {
+        width: 75vw;
+        height: 75vw;
     }
 }
 
@@ -356,12 +375,13 @@ body {
 
 @media (max-width: 480px) and (min-width: 0px) {
     .main5 .main5sub .main5subpart1 .brandpara1 {
-        width: 26rem;
+        width: 75vw;
     }
 }
 
 .main5 .main5sub .main5subpart1 .brandpara1 h2 {
     font-size: 3.5rem;
+    text-align: left;
 }
 
 .main5 .main5sub .main5subpart1 .brandpara1 p {
@@ -369,80 +389,111 @@ body {
     font-size: 2.0rem;
 }
 
-.main5 .main5sub .main5subpart1 .mainimg2 {
+.main5 .main5sub .main5subpart2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 90%;
+    row-gap: 2rem;
+    column-gap: 3rem;
+    text-align: justify;
+    /* border: 0.1rem solid black; */
+}
+
+.main5 .main5sub .main5subpar2 .mainimg2 {
+    display: flex;
+    justify-content: center;
     width: 30rem;
     /* border: 0.1rem solid black; */
 }
 
-@media (max-width: 480px) and (min-width: 0px) {
-    .main5 .main5sub .main5subpart1 .mainimg2 {
-        width: 26rem;
-    }
-}
-
-.main5 .main5sub .main5subpart1 .brandpara2 {
-    width: 30rem;
-    font-family: 'Roboto', sans-serif;
-    /* border: 0.1rem solid black; */
-}
-
-@media (max-width: 480px) and (min-width: 0px) {
-    .main5 .main5sub .main5subpart1 .brandpara2 {
-        width: 26rem;
-    }
-}
-
-.main5 .main5sub .main5subpart1 .brandpara2 h2 {
-    font-size: 3.5rem;
-}
-
-.main5 .main5sub .main5subpart1 .brandpara2 p {
-    line-height: 3rem;
-    font-size: 2.0rem;
-}
-
-.main5 .main5sub .main5subpart1 .mainimg3 {
-    width: 30rem;
-    /* border: 0.1rem solid black; */
-}
-
-@media (max-width: 480px) and (min-width: 0px) {
-    .main5 .main5sub .main5subpart1 .mainimg3 {
-        width: 26rem;
-    }
-}
-
-.main5 .main5sub .main5subpart1 .brandpara3 {
-    width: 30rem;
-    font-family: 'Roboto', sans-serif;
-    /* border: 0.1rem solid black; */
-}
-
-@media (max-width: 480px) and (min-width: 0px) {
-    .main5 .main5sub .main5subpart1 .brandpara3 {
-        width: 26rem;
-    }
-}
-
-.main5 .main5sub .main5subpart1 .brandpara3 h2 {
-    font-size: 3.5rem;
-}
-
-.main5 .main5sub .main5subpart1 .brandpara3 p {
-    line-height: 3rem;
-    font-size: 2.0rem;
-}
-
-.main5 .main5sub .main5subpart1 .brandimg {
+.main5 .main5sub .main5subpart2 img {
     width: 30rem;
     height: 30rem;
 }
 
 @media (max-width: 480px) and (min-width: 0px) {
-    .main5 .main5sub .main5subpart1 .brandimg {
-        width: 26rem;
-        height: 26rem;
+    .main5 .main5sub .main5subpart2 .mainimg2 img {
+        width: 75vw;
+        height: 75vw;
     }
+}
+
+.main5 .main5sub .main5subpart2 .brandpara2 {
+    width: 30rem;
+    font-family: 'Roboto', sans-serif;
+    /* border: 0.1rem solid black; */
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+    .main5 .main5sub .main5subpart2 .brandpara2 {
+        width: 75vw;
+    }
+}
+
+.main5 .main5sub .main5subpart2 .brandpara2 h2 {
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.main5 .main5sub .main5subpart2 .brandpara2 p {
+    line-height: 3rem;
+    font-size: 2.0rem;
+}
+
+.main5 .main5sub .main5subpart3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    row-gap: 2rem;
+    column-gap: 3rem;
+    text-align: justify;
+    /* border: 0.1rem solid black; */
+}
+
+.main5 .main5sub .main5subpart3 .mainimg3 {
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+    /* border: 0.1rem solid black; */
+}
+
+.main5 .main5sub .main5subpart3 img {
+    width: 30rem;
+    height: 30rem;
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+    .main5 .main5sub .main5subpart3 .mainimg3 img {
+        width: 75vw;
+        height: 75vw;
+    }
+}
+
+.main5 .main5sub .main5subpart3 .brandpara3 {
+    width: 30rem;
+    font-family: 'Roboto', sans-serif;
+    /* border: 0.1rem solid black; */
+}
+
+@media (max-width: 480px) and (min-width: 0px) {
+    .main5 .main5sub .main5subpart3 .brandpara3 {
+        width: 75vw;
+    }
+}
+
+.main5 .main5sub .main5subpart3 .brandpara3 h2 {
+    font-size: 3.5rem;
+    text-align: left;
+}
+
+.main5 .main5sub .main5subpart3 .brandpara3 p {
+    line-height: 3rem;
+    font-size: 2.0rem;
 }
 
 .main6 {
@@ -482,8 +533,8 @@ body {
 
 @media (max-width: 480px) and (min-width: 0px) {
     .main6 .main6sub .galleryimg {
-        width: 26rem;
-        height: 29rem;
+        width: 75vw;
+        height: 83vw;
     }
 }
 
@@ -656,7 +707,7 @@ body {
     text-align: center;
     color: #ffd996;
     /* border: 0.1rem solid white; */
-    padding-top: 2rem;
+    padding-top: 4rem;
     padding-bottom: 2rem;
     column-gap: 2rem;
     row-gap: 2rem;
@@ -735,7 +786,7 @@ body {
     font-size: 2.5rem;
     color: #ffd996;
     font-family: 'Roboto', sans-serif;
-    text-align: justify;
+    text-align: center;
     line-height: 4.5rem;
     width: 30rem;
 }
